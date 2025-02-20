@@ -54,6 +54,8 @@ lspconfig.lua_ls.setup {
   },
 }
 
+lspconfig.angularls.setup{}
+
 -- setup multiple servers with same default options
 local servers = { "tsserver", "html", "cssls" }
 
