@@ -10,7 +10,11 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-    opts = {},
+    opts = {
+      view = {
+        side = "right"
+      }
+    },
   },
 
   {
@@ -126,5 +130,9 @@ return {
     "lewis6991/gitsigns.nvim",
     event = { "BufReadPre", "BufNewFile" },
     opts = {},
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
 }
